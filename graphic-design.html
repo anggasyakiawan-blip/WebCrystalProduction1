@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Graphic Design - CRYSTAL PRODUCTION</title>
+
+<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+<style>
+:root{
+    --bg-color:#080808;
+    --second-bg-color:#080808;
+    --text-color:white;
+    --main-color:rgb(247,7,7);
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:"Poppins",sans-serif;
+    text-decoration:none;
+}
+
+body{
+    background:var(--bg-color);
+    color:var(--text-color);
+}
+
+/* ===== HEADER (DIRAPIKAN) ===== */
+.header{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    padding:3rem 12%;   /* SAMA KAYAK PHOTOGRAPHY */
+    background:rgba(0,0,0,0.3);
+    backdrop-filter:blur(10px);
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    z-index:100;
+}
+
+.logo{
+    font-size:3rem;
+    font-weight:800;
+    color:white;
+}
+
+.logo span{
+    color:var(--main-color);
+    text-shadow:0 0 25px var(--main-color);
+}
+
+.navbar a{
+    margin-left:4rem;
+    font-size:1.8rem;
+    color:white;
+    transition:.3s;
+}
+
+.navbar a:hover{
+    color:var(--main-color);
+}
+
+/* ===== SERVICE DETAIL (DIRAPIKAN) ===== */
+.service-detail{
+    min-height:100vh;
+    padding:12rem 12% 8rem; /* SAMA KAYAK PHOTOGRAPHY */
+    text-align:center;
+}
+
+.heading{
+    font-size:5rem;
+    margin-bottom:2rem;
+}
+
+.service-detail p{
+    font-size:1.8rem;
+    max-width:900px;
+    margin:0 auto 3rem;
+    line-height:1.8;
+}
+
+/* ===== GALLERY ===== */
+.gallery{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:2rem;
+    margin:4rem 0;
+}
+
+.gallery img{
+    width:220px;
+    height:220px;
+    object-fit:cover;
+    border-radius:1.5rem;
+    box-shadow:0 0 15px var(--main-color);
+    transition:0.3s ease;
+}
+
+.gallery img:hover{
+    transform:scale(1.05);
+    box-shadow:0 0 30px var(--main-color);
+}
+
+/* ===== BUTTON ===== */
+.btn{
+    display:inline-block;
+    padding:1rem 2.8rem;
+    background:var(--main-color);
+    color:black;
+    border-radius:4rem;
+    font-size:1.6rem;
+    font-weight:600;
+    transition:.3s;
+}
+
+.btn:hover{
+    transform:scale(1.05);
+    box-shadow:0 0 40px var(--main-color);
+}
+
+/* ===== FOOTER ===== */
+.footer{
+    padding:40px 0;
+    background:var(--second-bg-color);
+    text-align:center;
+}
+
+.footer .social a{
+    color:var(--main-color);
+    font-size:25px;
+    margin:0 10px;
+}
+
+.copyright{
+    margin-top:20px;
+    font-size:14px;
+}
+</style>
+</head>
+
+<body>
+
+<header class="header">
+    <a href="index.html" class="logo">CRYSTAL <span>PRODUCTION</span></a>
+    <nav class="navbar">
+        <a href="index.html#home">Home</a>
+        <a href="index.html#about">About</a>
+        <a href="index.html#service">Service</a>
+        <a href="index.html#project">Project</a>
+        <a href="index.html#contact">Contact</a>
+    </nav>
+</header>
+
+<section class="service-detail">
+    <h2 class="heading">Graphic Design Services</h2>
+    <p>
+        We specialize in creating visually appealing designs for various needs.
+        Our team uses the latest tools to deliver high-quality results tailored to your brand.
+    </p>
+
+    <div class="gallery">
+        <img src="img/poster natal bersama.png">
+        <img src="img/grid natal 2025 (2) (1).jpg">
+    </div>
+
+    <a href="index.html#contact" class="btn">Contact Us for a Quote</a>
+</section>
+
+<footer class="footer">
+    <div class="social">
+        <a href="https://www.instagram.com/crystalproduction?igsh=Yzg1cDEwNXUxaHN5"><i class="bx bxl-instagram-alt"></i></a>
+        <a href="https://www.tiktok.com/@crystalproduction9?_r=1&_t=ZS-93RZ8PMFKlD"><i class="bx bxl-tiktok"></i></a>
+    </div>
+    <p class="copyright">© Crystal production | All Rights Reserved</p>
+</footer>
+
+</body>
+</html>
